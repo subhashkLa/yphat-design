@@ -1,0 +1,161 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap ");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css");
+
+
+:root{
+    --custom-control-label:#676767;
+    --dropdown-bg:#f7f7f7;
+    --dropdown-color:#444242b8;
+    --dropdown-item:#495057;
+    --white:white;
+    --border-color:#e0e0e0;
+    --color:orange;
+}
+
+
+
+.reg-title img{
+    width: 50%;
+    height: 110px;
+    padding-left: 17px;
+}
+.custom-control-label{
+    color: var(--custom-control-label);
+    
+
+}
+
+
+
+
+
+
+
+
+.submit-btn{
+    margin-top: 20px!important;
+}
+
+@media screen and (max-width:1200px) {
+    .reg-mid{
+      width: 80%;
+
+    }
+    
+}
+@media screen and (max-width:575px) {
+    .reg-mid{
+      width: 80%!important;
+
+    }
+    .reg-title h1{
+       
+        text-align: center;
+    }
+    .reg-title{
+        width: 100%;
+        position: relative;
+    }
+    .img-box{
+        width: 50%;
+        margin:auto;
+    }
+    .img-box img{
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+
+
+.reg-top-container{
+    width: 100%;
+    height: auto;
+}
+
+.reg-mid{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(249 249 249);
+    margin-top: 60px;
+}
+
+.reg-mid-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    padding-bottom:10px;
+
+}
+
+
+
+.reg-title h3{
+    padding: 0px 0px 39px 36px;
+    color: var(--color);
+    font-weight: 400;
+    font-size: 33px;
+    
+}
+
+.reg-title h4{
+    padding: 0px 0px 10px 34px;
+    color: var(--heading-color);
+    font-weight: 400;
+    
+}
+
+.the-fieldset {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+.the-legend {
+    border-style: none;
+    border-width: 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    
+
+}
+
+
+.reg-title h1{
+    padding: 10px 0px 5px 33px;
+    color: var(--color);
+    font-weight: 300;
+    font-size: 30px;
+    
+}
+
+
+.form-row .btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0px 25px 6px 26px;
+    font-size: 20px;
+    background-color: var(--color)
+  
+
+}
+
+
+#first_name{
+    font-weight: 800;
+}
+#last_name {
+    font-weight: 800;
+}
+

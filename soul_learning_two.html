@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/fev.png">
+    <link rel="stylesheet" href="css/charity.css">
+    
+    <title>YPhat</title>
+</head>
+
+<body>
+<!-- header-top -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="logo-sec">
+                <a class="navbar-brand" id="example" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Live like water, gentle like land Sống như nước, hiền như đất"><img alt="#" id="image" src="img/logo.png"></a>
+            </div>
+            <button class="navbar-toggler bg-dark" type="button" data-trigger="#main_nav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="navbar-collapse" id="main_nav">
+            <div class="offcanvas-header mt-3">  
+                <button class="btn btn-outline-danger btn-close float-right">  Close </button>
+                <h5 class="py-2 text-white">Main navbar</h5>
+            </div>
+            <div class="column search-sec">
+                <form class="search-from"><input type="text" placeholder="Search Temple or Event "> <button type="submit"><i class="fa fa-search"></i></button></form>
+            </div>
+            <ul class="navbar-nav">
+            
+                <li> <a href="index.html" class="nav-item nav-link active navone" id="nav-one" data-toggle="tooltip" data-placement="bottom" title="Home"></a></li>
+                <li> <a href="buddha_temple.html" class="nav-item nav-link navtwo" data-toggle="tooltip" data-placement="bottom" title="Buddhist Temples"></a></li>
+                <li> <a href="charity.html" class="nav-item nav-link navthree" data-toggle="tooltip" data-placement="bottom" title="Charities"></a></li>
+                <li> <a href="buddhism.html" class="nav-item nav-link navfour" data-toggle="tooltip" data-placement="bottom" title="Buddhism"></a></li>
+                <li> <a href="soul_learning_two.html" class="nav-item nav-link navfive" data-toggle="tooltip" data-placement="bottom" title="Soul Learning"></a></li>
+                <li> <a href="self_learning_programs.html" class="nav-item nav-link navsix" data-toggle="tooltip" data-placement="bottom" title="Buddhism Self-Learning Programs"></a></li>
+                <li> <a href="org_full_details.html" class="nav-item nav-link navseven" data-toggle="tooltip" data-placement="bottom" title="Self-Refuge to Buddha"></a></li>
+                <li> <a href="self_repent_info.html" class="nav-item nav-link naveight" data-toggle="tooltip" data-placement="bottom" title="Self-Repent"></a></li>
+                <li> <a href="health.html" class="nav-item nav-link navnine" id="nav-nine" data-toggle="tooltip" data-placement="bottom" title="Health"></a></li>            
+                <li> <a href="vegan_shop.html" class="nav-item nav-link navten" data-toggle="tooltip" data-placement="bottom" title="Vegan Shop/Restaurants"></a></li>
+                <li> <a href="buddhist_temple_tours.html" class="nav-item nav-link naveleven" data-toggle="tooltip" data-placement="bottom" title="Buddhist Temple Tours"></a></li>
+                <li> <a href="index.html" class="nav-item nav-link navtwelve" id="nav-twelve" data-toggle="tooltip" data-placement="bottom" title="Y-Messenger"></a></li>
+                <li> <a href="donate_items.html" class="nav-item nav-link navthirteen" data-toggle="tooltip" data-placement="bottom" title="Donate Items"></a></li>
+                <li> <a href="login.html" class="nav-item nav-link navfourteen" id="nav-fourteen" data-toggle="tooltip" data-placement="bottom" title="Login"></a></li>
+                <li> <a href="yphat_acc.html" class="nav-item nav-link navfifteen" data-toggle="tooltip" data-placement="bottom" title="Sign Up New Account"></a></li>
+                <li>
+                     <a href="index.html" class="nav-item nav-link navsixteen" id="nav-sixteen"></a>
+                     <a href="index.html" class="nav-item nav-link navseventeen" id="nav-seventeen"></a>
+                </li>
+                
+                
+                
+            </ul>
+            </div> <!-- navbar-collapse.// -->
+        </nav>
+    </div>
+
+    <!-- header-end -->
+    <!-- bell -->
+    <audio id="myAudio">
+        <source src="audio/3AwakeningBell.m4a" type="audio/mp3">
+      </audio>
+      <div class="audio-bell">
+          <a onclick="playAudio()" href="Awakening_Bell.html" target="blank" class="nav-link bell" data-toggle="tooltip" data-placement="bottom" title="Awakening Bell"></a>
+      </div>	  
+    <!-- bell-end -->
+    <!-- fixed-bar -->
+    <div class="fixedpraybox" data-toggle="tooltip" data-placement="left" title="Click on icon to Vote for YPhat.com">
+        <ul class="list-pray">
+            <li><a class="prayerfix" href="#"  data-toggle="tooltip" data-placement="bottom" title="Pray">1234 <img alt="#"  src="img/paryeicon-fix.png"></a></li>
+            <li><a class="lovefix" href="#"  data-toggle="tooltip" data-placement="bottom" title="Love">4560 <img alt="#"  src="img/loveicon.png"></a></li>
+            <li><a class="likefix" href="#"  data-toggle="tooltip" data-placement="bottom" title="Like">7890 <img alt="#"  src="img/likeicon.png"></a></li>
+            <li><a class="dislikefix" href="#"  data-toggle="tooltip" data-placement="bottom" title="Dislike">0001 <img alt="#"  src="img/dislikeicon.png"></a></li>
+        </ul>
+    </div>
+    <!-- fixedbar-end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+            <!-- Bootstrap List Group -->
+            <div class="list-group">
+                <!-- Separator with title -->
+                
+                <!-- Menu with submenu -->
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <span class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-home fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Home</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </span>
+                </a>
+                <!-- Submenu content -->
+                <!-- <div id='submenu1' class="collapse sidebar-submenu">
+          
+                </div> -->
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-heart fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Donate Items</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu2' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Add Items</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Donated Items</span>
+                    </a>
+                </div>
+    
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-fire fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Organization</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu3' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Profile</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Event</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Vegan Dishes</span>
+                    </a>
+                </div>
+                <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-star fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Favourites</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu4' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Buddhist Temples</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Charities</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Buddhism</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Vegan Shops</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Vegan Restaurants</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Vegan Dishes</span>
+                    </a>               
+                </div>
+    
+    
+    
+    
+                <a href="#submenu5" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-play fa-fw mr-3"></span>
+                        <span class="menu-collapsed" onclick="myFunction_soul_learing_two_one()">Self Learning Programs</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu5' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Programs</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed"  onclick="myFunction_soul_learing_two_two()">+<span class="space-between"></span>Registered Programs</span>
+                    </a>
+                </div>
+    
+                <a href="#submenu6" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-history fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Pray For The World</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu6' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Settings</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Password</span>
+                    </a>
+                </div>
+    
+    
+    
+    
+    
+    
+    
+    
+                <a href="#" class=" list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-play-circle fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Awakening Bell</span>
+                    </div>
+                </a>
+    
+    
+    
+                <a href="#submenu8" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-film fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Buddhist & Meditation Classes</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu8' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Classes</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Registered Classes</span>
+                    </a>
+                </div>
+    
+    
+    
+         
+    
+             
+    
+                <a href="#submenu9" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-magic fa-fw mr-3"></span>
+                        <span class="menu-collapsed" onclick="myFunction_soul_learing_two_three()">Soul Learning Programs</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu9' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>What is the soul?</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed" onclick="myFunction_soul_learing_two_four()">+<span class="space-between"></span>Programs</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed"  onclick="myFunction_soul_learing_two_five()">+<span class="space-between"></span>Registered Programs</span>
+                    </a>
+                </div>
+    
+    
+    
+                <a href="#submenu10" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user-md fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Health</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu10' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>How is Health Importent to us?</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Body Health</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Soul Health</span>
+                    </a>
+                </div>
+    
+                <!-- Separator with title -->
+                <div class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>OPTIONS</small>
+                </div>
+                <!-- /END Separator -->
+                   
+                <a href="#submenu11" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-cogs fa-fw mr-3"></span>
+                        <span class="menu-collapsed" onclick="myFunction_three()">Setting</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu11' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <span class="menu-collapsed">+<span class="space-between"></span>Preferences</span>
+                    </a>
+                   
+                </div>
+    
+    
+    
+                <a href="#" class=" list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-calendar fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Find More</span>
+                    </div>
+                </a>
+     
+                <!-- Separator without title -->
+                <div class="list-group-item sidebar-separator menu-collapsed bg-white"></div>
+                <!-- /END Separator -->
+           
+                <a href="#top" data-toggle="sidebar-colapse" class="list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                    </div>
+                </a>
+            </div><!-- List Group END-->
+        </div><!-- sidebar-container END -->
+        <!-- MAIN -->
+        <div class="col" id="self_learing_programs">
+            <div class="self_learning_two_container">                
+                <section>
+                    <div class="total-section" id="idone" style="display: none;">
+                        <div class="row">
+                            <div class="title-training-two">
+                                <h5>BUDDHISM ONLINE TRAINING PROGRAMS</h5>
+                            </div>
+                            <div class="container-two" >
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Understanding Buddhism as an Education for Living<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What Is Buddhism?</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 1</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Enlightenment<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What is Enlightenment?</h5>
+                                                <h5>+<span class="space-between"></span> Why do we need to be Enlightenment?</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 1</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>      
+                                
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Meditation<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What is Meditation?</h5>
+                                                <h5>+<span class="space-between"></span>Why do you need Meditation?</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Advance Buddhism 1<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What Is Buddhism?</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 1</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Advance Buddhism 2<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What is Advance Buddhism 2 benefits?</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 1</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                         
+                            </div>                
+                        </div>
+                    </div>
+
+
+
+                    <div class="registered-section" id="idtwo" style="display: none;">
+                        <div class="row">
+                            <div class="title-training-two">
+                                <h5>REGISTERED SELF-LEARNING PROGRAMS</h5>
+                            </div>
+                            <div class="container-two" >
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Understanding Buddhism as an Education for Living<span>Registered<i class="fa fa-check-circle"></i></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What Is Buddhism?<span class="start-icon">Click Here To Start<span class="space-between"></span><span class="space-between"></span><i class="fa fa-star"></i></span></h5>
+                                                <h5>+<span class="space-between"></span>Lesson 1</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                    
+                            </div>                
+                        </div>
+                    </div>
+
+                    <div class="soul_learning_programs_section" id="idthree">
+                        <div class="row">
+                            <div class="title-training-two">
+                                <h5>SOUL LEARNING PROGRAMS</h5>
+                            </div>
+                            <div class="container-two" >
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Understanding The Soul<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What is the soul?</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 1</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                    
+                            </div> 
+                            <div class="container-two" >
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>How To Understand Our Soul?<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>What is the soul?</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 1</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 2</h5>
+                                                <h5>+<span class="space-between"></span>Lesson 3</h5>
+                                                <h5>+<span class="space-between"></span>Review Learning</h5>
+                                                <h5>+<span class="space-between"></span>Exam</h5>
+                                                <h5>+<span class="space-between"></span> Completing, Feedback and Qualifying</h5>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                    
+                            </div>                         
+                        </div>
+                    </div>
+
+                    <div class="health_section" id="idfour" style="display: none;">
+                        <div class="row">
+                            <div class="title-training-two">
+                                <h5>HEALTH IS IMPORTANT TO US</h5>
+                            </div>
+                            <div class="container-two" >
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>How is Health Importent to us<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>To be happy.</h5>
+                                                <h5>+<span class="space-between"></span>A healthy person can be has a Healthy Body and a Healthy Body</h5>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                    
+                            </div>   
+                            <div class="container-two" >
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Body Health<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>Exercise</h5>
+                                                <h5>+<span class="space-between"></span>Practise Yoga</h5>                                            
+                                                <h5>+<span class="space-between"></span>Walking</h5>                                            
+                                                <h5>+<span class="space-between"></span>Working</h5>                                            
+                                                <h5>+<span class="space-between"></span>Helping others</h5>                                            
+                                                <h5>+<span class="space-between"></span>Find a good Doctor for you Health</h5>                                            
+                                                <h5>+<span class="space-between"></span>Eat Vagetal</h5>                                            
+                                                <h5>+<span class="space-between"></span>Go Vegan</h5>                                            
+                                                <h5>+<span class="space-between"></span>Healthy Food</h5>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                    
+                            </div>   
+                            <div class="container-two" >
+                                <div class="self_learing_main_section">
+                                    <div class="col-12">
+                                        <div class="section-training">
+                                            <div class="self_learing_section-head">
+                                                <h5>Soul Health<span><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="fa fa-share"></i></a><a href="#" class="#" data-toggle="tooltip" data-placement="bottom" title="Registered"><i class="fa fa-registered"></i></a></span></h5>
+                                            </div>
+                                            <div class="self_learing_section-btm">
+                                                <h5>+<span class="space-between"></span>A healthy person must have a Healthy Body and a Healthy Soul</h5>
+                                                <h5>+<span class="space-between"></span>First, Love your soul</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less Angry</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less hates</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less lies</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less ambision</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less analysis</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less comparing things</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less competition</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less enviousness, jealousy</h5>                                            
+                                                <h5>+<span class="space-between"></span>Less killing animals</h5>                                            
+                                                <h5>+<span class="space-between"></span>More love people, love animals</h5>                                            
+                                                <h5>+<span class="space-between"></span>More love nature</h5>                                            
+                                                <h5>+<span class="space-between"></span>More helping people</h5>                                            
+                                                <h5>+<span class="space-between"></span>More Meditation</h5>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                    
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div><!-- Main Col END -->
+    </div><!-- body-row END -->
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+    <footer class="mainfooter">
+        <div class="container-fluid">
+            <div class="footlogo"><img alt="#" src="img/logofoot.png">
+              <p class="tagline">Live like water, gentle like land Sống như nước, hiền như đất</p></div>
+            <div class="foot-nav">
+                <a href="#">Home </a>
+                <a href="#">Buddhist Temples </a>
+                <a href="#"> Charities </a> 
+                <a href="#">  Buddhism  </a>
+                <a href="#">  Self Refuge </a>
+                <a href="#">   Self-Repent </a>
+              <a href="#">  Vegan Shop/Restaurants</a>
+              <a href="#">  Soul Learning</a>
+              </div>
+               <div class="foot-nav">
+                <a href="#">Buddhism Online Training </a>
+                <a href="#">Awakening Bell </a>
+               
+              </div>
+            <div class="foot-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+            <div class="footcopy"><p>&copy; 2020 YPhat - All Right reserved! <a href="#"> Privacy & Policy </a> <a href="#">   Terms & Condition</a></p></div>
+            <div class="vistior"> <p>No of Visitors
+                
+                <span>4822</span></p></div>
+
+        </div>
+    </footer>
+
+<!-- footer-end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js "></script>
+    <script type="text/js" src="js/app.js"> </script>
+    <script src="js/my.js"> </script>
+
+
+    
+    
+</body>
+
+</html>

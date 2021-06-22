@@ -1,0 +1,755 @@
+
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap ");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css");
+
+
+
+
+
+:root{
+    --blue:blue;
+    --red:red;
+    --gray:gray;
+    --white:white;
+    --whitesmoke:#fbfbfb;
+    --black:black;
+    --black-one:#191919;
+    --border-color:#c7c7c7;
+    --place-holder-search: #c2c2c2;
+    --place-holder-button:#f6921e;
+    --anchor-color:#474d52;   
+    --heading-color:#474d52;
+    --button-hover: #0b7dda;
+    --placeholder:#CDCDCD;
+    --donate-color:#50d250;
+    --donate-hover:rgba(0, 128, 0, 0.856);
+    --header-background:#f9f9f9;
+    --body-bg:#869e9e;
+    --left-img-box:#7e8992;
+
+}
+
+
+body {
+    font-family:'Oswald', sans-serif;
+    padding: 0px!important;
+    background-color: var(--body-bg);
+}
+
+/* header-start */
+.header{
+    width: 100%;
+    height: auto;
+    background-color:var(--header-background);
+}
+
+.navbar{
+    background-color: var(--header-background);
+}
+
+/* mobile-menu */
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+    z-index: 2;
+  }
+  .search-from button {
+    position: absolute;
+    left: 178px;
+    top: 6px;
+    background: no-repeat;
+    border: none;
+    padding: 0px;
+    color: var(--place-holder-button);
+}
+
+@media (max-width: 260px) { 
+    .logo-sec img{
+        width: 80px!important;
+    }
+
+}
+#nav-one,#nav-eight,#nav-twelve,#nav-fourteen,#nav-sixteen {
+    margin-left: 5px!important;
+}
+
+
+}
+/* mobile-menu-end */
+
+
+/* navbar-image */
+
+.nav-link.navone{background: url(../img/nav/index.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navtwo{background: url(../img/nav/buddhist_temple.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navthree{background: url(../img/nav/charity.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navfour{background: url(../img/nav/buddhism.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navfive{background: url(../img/nav/soul_learning.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navsix{background: url(../img/nav/self_learning.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navseven{background: url(../img/nav/self_refuge.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.naveight{background: url(../img/nav/self_repent.png);background-repeat: no-repeat;background-size: 100%;
+}
+
+
+.nav-link.navnine{background: url(../img/nav/health.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navten{background: url(../img/nav/vegan-shop.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.naveleven{background: url(../img/nav/temple_tours.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navtwelve{background: url(../img/nav/y-messenger.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navthirteen{background: url(../img/nav/donation_btn.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navfourteen{background: url(../img/nav/login.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navfifteen{background: url(../img/nav/sign_up.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navsixteen{background: url(../img/nav/eng.png);background-repeat: no-repeat;background-size: 100%;
+}
+.nav-link.navseventeen{background: url(../img/nav/eng.png);background-repeat: no-repeat;background-size: 100%;
+}
+
+/* navbar-image-end */
+
+/*language-btn*/
+#nav-sixteen:hover ~ #nav-seventeen{
+    opacity: 1;
+
+}
+
+#nav-seventeen{
+    position: absolute;
+    bottom: 0;
+    right: 22px;
+    top: 45px;
+    opacity: 0;
+
+}
+.nav-link {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0 5px;
+}
+
+/*logo-image*/
+
+.logo-sec img {
+    height: 41px;
+    width: 150px;
+    margin-left: 0px;
+    margin-top: -5px;
+}
+/*logo-image-end*/
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+}
+@media (max-width: 300px) { 
+    .temple-section .section-title{
+        width: 100%;
+        height: 60px;
+    }
+    .temple-section .head-title{
+        font-size: 16px;
+    }
+    .viewall{
+        margin-top: 5px;
+    }
+
+
+}
+
+/* navbar-hover-image */
+.navone:hover{  
+    cursor: pointer;
+    content: url('/img/nav/index-hover.png');
+
+  
+}
+
+.navtwo:hover{  
+    cursor: pointer;  
+    content: url('/img/nav/buddhist_temple_hover.png');
+}
+.navtwo:active{  
+    cursor: pointer;  
+    content: url('/img/new/2.png');
+}
+
+.navthree:hover{  
+    cursor: pointer;
+    content: url('/img/nav/charity_hover.png');
+
+}
+.navfour:hover{  
+    cursor: pointer; 
+    content: url('/img/nav/buddhism_hover.png');
+}
+.navfive:hover{  
+    cursor: pointer; 
+    content: url('/img/nav/soul_learning_hover.png');
+}
+.navsix:hover{  
+    cursor: pointer;
+    content: url('/img/nav/self_learning_hover.png');
+}
+.navseven:hover{  
+    cursor: pointer; 
+    content: url('/img/nav/self_refuge_hover.png');
+}
+.naveight:hover{  
+    cursor: pointer;  
+    content: url('/img/nav/self_repent_hover.png');
+}
+.navnine:hover{  
+    cursor: pointer;  
+    content: url('/img/nav/health_hover.png');
+}
+.navten:hover{  
+    cursor: pointer;  
+    content: url('/img/nav/vegan_shop_hover.png');
+}
+
+.naveleven:hover{
+    cursor: pointer;   
+    content: url('/img/nav/temple_tours_hover.png');
+}
+.navtwelve:hover{
+    cursor: pointer;   
+    content: url('/img/nav/y-messenger_hover.png');
+}
+.navthirteen:hover{  
+    cursor: pointer;   
+    content: url('/img/nav/donation_btn_hover.png');
+}
+.navfourteen:hover{
+    cursor: pointer;   
+    content: url('/img/nav/login_hover.png');
+}
+
+.navfifteen:hover{  
+    cursor: pointer;   
+    content: url('/img/nav/sign_up_hover.png');
+}
+
+
+/* navbar-hover-image-end */
+
+
+.search-from {
+    position:relative;
+
+}
+
+
+.search-from input{    
+    background: var(--whitesmoke);
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    height: 35px;
+    border-radius: 0px;
+    font-size: 14px;
+    width: 200px;
+    max-width: 100%;
+    margin-bottom: 7px;
+    outline-color: var(--place-holder-button);
+    
+
+} 
+
+
+.search-from input::placeholder{color: var(--placeholder)}
+.search-from button{
+    position: absolute;
+    right: 11px;
+    top: 6px;
+    background: no-repeat;
+    border: none;
+    padding: 0px;
+    color: var(--place-holder-button);
+}
+
+
+/* between-nav-icon-space */
+
+#nav-one{
+    margin-left: 50px;
+}
+#nav-nine{
+    margin-left: 50px;
+}
+#nav-twelve{
+    margin-left: 50px;
+}
+#nav-fourteen{
+    margin-left: 50px;
+    
+}
+#nav-sixteen{
+    margin-left: 50px;
+    
+}
+
+/*between-icon-space-end*/
+
+
+
+
+
+.fixedpraybox{
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 10px;
+    width: 200px;
+    text-align: right;
+    padding: 10px;   
+    border-radius: 12px 0px 0px 12px;}
+.fixedpraybox ul.list-pray li {
+    line-height: 27px;
+    margin-bottom: 7px;
+    transition: all  1s;
+    list-style: none;
+    
+}
+.fixedpraybox ul.list-pray li a:hover {
+
+    padding:9px 55px 9px 9px;
+ 
+}
+
+
+.fixedpraybox ul.list-pray li:last-child{border: none;}
+.fixedpraybox ul.list-pray li a {
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 13px;
+    background-color: var(--white);
+    padding: 9px 9px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: all 1s;
+    text-decoration: none;
+    box-shadow: 0 0 20px 7px rgba(204, 204, 204, 0.3);
+
+}
+
+.fixedpraybox ul.list-pray li a img{
+    height:23px;
+    margin-left:8px;
+}
+
+@media (min-width: 992px) and (max-width: 1056px) { 
+    .navfive,.navsix,.navseven,.naveight,.navnine,.navten,.naveleven{
+        display: none;
+    }
+}
+@media (min-width: 1056px) and (max-width: 1100px) { 
+    .navseven,.naveight,.navnine,.navten,.naveleven{
+        display: none;
+    }
+}
+@media (min-width: 1100px) and (max-width: 1200px) { 
+    .navnine,.navten,.naveleven{
+        display: none;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1300px) { 
+    .navnine,.naveleven{
+        display: none;
+    }
+}
+
+
+/* header-end */
+
+/* self-repent-info */
+/* top-banner */
+.self-repent img{
+    width: 100%;
+    height: 500px;
+}
+
+/* top-banner-end */
+
+
+/* self-repent-search-bar */
+
+.buddha-search-container{
+    padding: 25px;
+}
+form.example input[type=text] {
+    padding:4px 6px;
+    font-size: 17px;
+    border: 1px solid var(--border-color);
+    float: left;
+    width: 15%;
+    background: var(--white);
+    margin-left: 7px;
+    margin-top: 0px;   
+    outline: none;
+  }
+  
+  form.example button {
+    float: left;
+    color: var(--place-holder-button);
+    font-size: 17px;
+    border: 0px;
+    border-left: none;
+    cursor: pointer;
+    margin-left: -31px;
+    outline: none;
+    margin-top: 3px;
+    background-color: transparent;
+}
+  
+  ::placeholder{
+      color: var(--placeholder);
+      font-size: 13px;
+  }
+  form.example button i:hover {
+    color:var(--blue);
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media (min-width: 716px) and (max-width: 1100px) { 
+    form.example input[type=text]{
+        width: 24.25%;
+        margin-top: 5px;
+    }
+    form.example button{
+        margin-top: 9px;
+       
+    }
+   }
+  @media (min-width: 716px) and (max-width: 955px) { 
+    form.example input[type=text]{
+        width: 20%;
+        margin-top: 5px;
+    }
+    form.example button{
+        margin-top: 9px;
+       
+    }
+   }
+
+  @media (min-width: 500px) and (max-width: 715.98px) { 
+    form.example input[type=text]{
+        width: 48%;
+        margin-top: 5px;
+    }
+    form.example button{
+        margin-top: 9px;
+       
+    }
+   }
+  @media (min-width: 150px) and (max-width: 499.98px) { 
+    form.example input[type=text]{
+        width: 99%;
+        margin-top: 5px;
+    }
+    form.example button{
+        margin-top: 9px;
+       
+    }
+   }
+/* searchbar-end */
+
+/* main-section */
+.row{
+    margin: 0;
+    padding: 0;
+
+}
+.col-md-6,.col-sm-12{
+    margin: 0;
+    padding: 0;
+}
+.top-title{
+    padding: 50px 0px;
+}
+.top-title h1{
+    text-align: center;
+    color: rgb(236 236 236);
+}
+
+
+.left-img-box{
+    width: 75%;
+    margin: auto;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: var(--left-img-box);
+    border-color: var(--orange);
+}
+
+.right-img-box{
+    width: 75%;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: var(--left-img-box);
+    border-color: var(--orange);
+}
+
+
+.left-img-box img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;    
+}
+.left-img-box img:hover{
+    opacity: 0.6;   
+    transition: all .5s;
+}
+.right-img-box img:hover{
+    opacity: 0.6;   
+    transition: all .5s;
+}
+.right-img-box img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+
+.p-box-right-container{
+    width: 80%;
+    height: auto;  
+    margin-top: 50px;
+    color: var(--white);
+}
+.p-box-left-container{
+    width: 80%;
+    height: auto;  
+    margin-top: 50px;
+    margin-left: 45px;
+    color: var(--white);
+    text-align: right;
+}
+
+.p-box-right-container p{
+    margin-top: 25px;
+}
+
+.p-box-left-container p{
+    margin-top: 25px;
+    text-align: right;
+}
+
+
+@media (min-width: 300px) and (max-width: 574.98px) { 
+  
+ 
+    .p-box-left-container{
+        width: 100%;
+        height: auto;  
+        margin-top: 50px;
+        margin-left: 0;
+        color: var(--white);
+        text-align: center;
+
+    }
+    
+    .p-box-right-container{
+        width: 100%;
+        height: auto;  
+        margin-top: 50px;
+        color: var(--white);
+        text-align: center;
+    }
+    .p-box-right-container p{
+        text-align: center;
+        padding: 0px 20px;
+    }
+    
+    .p-box-left-container p{
+        text-align: center;
+        padding: 0px 20px;
+    }
+    .left-img-box{
+        width: 100%;
+        margin: auto;
+        border-style: solid;
+        padding: 20px;
+        border-radius: 20px;
+        border-width: 1px;
+        background-color: var(--left-img-box);
+        border-color: var(--orange);
+    }
+        
+
+    .right-img-box{
+        width: 100%;
+        border-style: solid;
+        padding: 20px;
+        border-radius: 20px;
+        border-width: 1px;
+        background-color: var(--left-img-box);
+        border-color: var(--orange);
+        margin: auto;
+    }
+
+    
+
+
+}
+
+
+/* main-section-end */
+  /* bell */
+a.nav-link.bell {
+    background: url(../img/nav/bell.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 6em;
+    z-index: 9;
+    right: 12px;
+}
+/* bell-end */
+/* self-repent-info-end */
+
+/* footer */
+
+.mainfooter{
+    background: url(../img/footbg.jpg);    
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.vistior,.footcopy,.foot-nav,
+.foot-social{margin-top:25px;}
+.mainfooter .footlogo p.tagline{
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.foot-nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    color: var(--white);
+    margin:0 10px;
+    text-decoration: none;
+}
+.foot-nav a:after{    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--place-holder-button);
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 17px;}
+
+.foot-nav a:last-child:after{
+    display: none;
+}
+.foot-social a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background:var(--place-holder-button);
+    color:var(--white);
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100%;
+    margin:0 6px; 
+}
+ .foot-social a:hover{
+     background:var(--white);
+     color: var(--place-holder-button);
+    
+}
+
+.footcopy p{
+    font-size: 15px;
+    color:var(--border-color);
+    text-align: center;
+}
+
+.footcopy p a{
+    display: inline-block;
+    color: var(--border-color);
+    margin-left: 4px;
+  
+
+}
+ 
+.vistior p {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+    text-align: center;
+    margin-right: 22px;
+}
+.vistior p span {
+    display: inline-block;
+    background: var(--white);
+    color: var(--black);
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 16px;
+    padding-left: 13px;
+   
+}
+.footcopy p a:hover,
+.foot-nav a:hover{color: var(--place-holder-button)}
+.classes-list {
+    padding:0;
+}
+
+/* footer-end */
